@@ -157,8 +157,25 @@ Run `./stop.sh` to tear down the service.
 3. Set up frontend (optional):
    ```bash
    cd frontend
-   npm install
-   ```
+    npm install
+    ```
+
+### Portable Build
+
+To create a self-contained, ready-to-run archive:
+
+```bash
+bash scripts/build_portable.sh
+```
+
+The script installs all Python dependencies into a virtual environment and
+creates `ii-agent-portable.zip`. After extracting the archive, activate the
+virtual environment and run the CLI or server:
+
+```bash
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+python cli.py
+```
 
 ### Command Line Interface
 
