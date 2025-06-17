@@ -189,3 +189,6 @@ data/
 output/
 
 .vscode/
+
+ii-agent-portable.zip
+portable/
